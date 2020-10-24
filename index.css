@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(191, 207, 202);
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
