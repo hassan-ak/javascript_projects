@@ -7,6 +7,81 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Title -->
+    <h2>Expense Tracker</h2>
+
+    <!-- App Container -->
+    <div class="container">
+
+        <!-- Balance -->
+        <div class="balance">
+            <h4>Balance</h4>
+            <h1 id="balance">$ 0.00</h1>
+        </div>
+
+        <!-- Income Expense Summary -->
+        <div class="income-expense">
+            <!-- income summary -->
+            <div>
+                <h4>Income</h4>
+                <p id="income" class="income-m">
+                    $ 0.00
+                </p>
+            </div>
+            <!-- expense summary -->
+            <div>
+                <h4>Expense</h4>
+                <p id="expense" class="expense-m">
+                    $ 0.00
+                </p>
+            </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div>
+            <h3>Transaction History</h3>
+            <ul id="list" class="list">
+
+                <!--Dummy Data-->
+                <li class="income-h">In<span>$100</span>
+                    <button class="del">X</button>
+                </li>
+                <li class="expense-h">Out<span>-$100</span>
+                    <button class="del">X</button>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <!-- Add Transaction -->
+        <div>
+            <h3>Add Transaction</h3>
+            <form id="form">
+                <!-- Description -->
+                <div>
+                    <label for="description">Description</label>
+                    <input type="text" id="description" placeholder="Enter Description">
+                </div>
+                <!-- amount -->
+                <div>
+                    <label for="amount">
+                        Amount 
+                        <br/>
+                        <span>+ve for Income and -ve for Expense</span>
+                    </label>
+                    <input type="number" id="amount" placeholder="Enter Amount">
+                </div>
+                <!-- add Transaction Button -->
+                <button class="add">
+                    Add Transaction
+                </button>
+            </form>
+        </div>
+
+
+
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
