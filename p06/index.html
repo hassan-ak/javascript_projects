@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Random user Pic">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Course Content</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">SignUp</a></li>
+        </ul>
+    </nav>
+    <Header>
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1> My Landing Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, suscipit.</p>
+        <button class="apply" id="apply">Apply Now</button>
+    </Header>
+    <div class="container">
+        <h2>Cloud Native Computing</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptate magni eaque, illum, delectus eos, alias tempore saepe modi aut facilis a voluptas qui incidunt tenetur exercitationem quis repellendus architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusantium hic ab cum consectetur maxime consequuntur dolorem eius animi eos ad provident nesciunt ex, perspiciatis quisquam vitae beatae optio temporibus.</p>
+        <h2>More Information</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia aliquid, accusamus voluptatibus voluptates sequi ipsa magni nostrum tenetur ad maxime quis impedit commodi consequatur quia porro odio illo numquam eius!</p>
+        <h2>Course Content</h2>
+        <ul>
+            <li>Project 01</li>
+            <li>Project 02</li>
+            <li>Project 03</li>
+            <li>Project 04</li>
+            <li>Project 05</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam vero accusantium recusandae, architecto est eveniet maxime quo obcaecati fugiat a facere? Maxime ipsum consequuntur adipisci ut excepturi dolore quae.</p>
+    </div>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Apply</h3>
+            </div>
+            <div class="modal-content">
+                <p>To sign up for classes please submit this form.</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter Full Name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter Email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="contact">Contact Number</label>
+                        <input type="number" id="number" placeholder="Enter Contact No." class="form-input">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter Address" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Pasword" class="form-input">
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" class="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
