@@ -46,7 +46,6 @@ function linkAction(){
     navMenu.classList.remove('showMenu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-window.addEventListener("click", linkAction);
 
 // ***---***---***//
 // Header border while scroling down

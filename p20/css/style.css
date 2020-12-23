@@ -5,6 +5,7 @@
 :root {
     --headerHeight: 3rem;
     --firstColor: #069C54;
+    --firstColorAlt: #048654;
     --titleColor: #393939;
     --textColor: #707070;
     --bodyColor: #FBFEFD;
@@ -12,9 +13,13 @@
     --bodyFont: 'Poppins', sans-serif;
     --normalFontSize: .938rem;
     --fontMedium: 500;
+    --margin1: .5rem;
     --margin2: 1rem;
+    --margin4: 2rem;
     --margin5: 2.5rem;
     --zFixed: 100;
+    --biggestFontSize: 2.25rem;
+    --h1FontSize: 1.5rem;
 }
 *,::before,::after{
     box-sizing: border-box;
@@ -41,6 +46,13 @@ ul{
 ul{
     padding: 0;
     list-style: none;
+}
+h1,h2{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* Header Component Styling */
@@ -97,11 +109,49 @@ ul{
     cursor: pointer;
 }
 
+/* Home Component */
+.bdGrid{
+    display: grid;
+    gap: 1.5rem;
+}
+.homeContainer{
+    height: calc(100vh - var(--headerHeight));
+    align-content: center;
+}
+.homeTitle{
+    font-size: var(--biggestFontSize);
+    color: var(--firstColor);
+    margin-bottom: var(--margin1);
+}
+.homeSubtitle{
+    font-size: var(--h1FontSize);
+    color: var(--titleColor);
+    margin-bottom: var(--margin4);
+}
+.homeImg{
+    width: 300px;
+    justify-self: center;
+}
+.button{
+    display: inline-block;
+    background-color: var(--firstColor);
+    color: #FFF;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+.button:hover{
+    background-color: var(--firstColorAlt);
+}
+
 /* Media Queries */
 @media screen and (min-width: 960px){
     .bdContainer{
       margin-left: auto;
       margin-right: auto;
+    }
+    .homeImg{
+        width: 500px;
     }
 }
 @media screen and (max-width: 780px){
@@ -122,6 +172,8 @@ ul{
 @media screen and (min-width: 780px){
     :root{
         --normalFontSize: 1rem;
+        --biggestFontSize: 4rem;
+        --h1FontSize: 2.25rem;
     }
     body{
         margin: 0;
@@ -142,6 +194,16 @@ ul{
     .changeTheme{
         position: initial;
         margin-left: var(--margin2);
+    }
+    .homeContainer{
+        height: 100vh;
+        justify-items: center;
+    }
+}
+@media screen and (min-width: 576px){
+    .homeContainer{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
     }
 }
 
