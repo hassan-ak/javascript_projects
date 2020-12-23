@@ -21,6 +21,7 @@
     --zFixed: 100;
     --biggestFontSize: 2.25rem;
     --h1FontSize: 1.5rem;
+    --h3FontSize: 1rem;
 }
 *,::before,::after{
     box-sizing: border-box;
@@ -48,7 +49,7 @@ ul{
     padding: 0;
     list-style: none;
 }
-h1,h2,p{
+h1,h2,h3,p{
     margin: 0;
 }
 img{
@@ -175,6 +176,30 @@ img{
     justify-self: center;
 }
 
+/* Services Component */
+.servicesContainer{
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.servicesContent{
+    text-align: center;
+}
+.servicesImg{
+    width: 64px;
+    height: 64px;
+    fill: var(--firstColor);
+    margin-bottom: var(--margin2);
+}
+.servicesTitle{
+    font-size: var(--h3FontSize);
+    color: var(--titleColor);
+    margin-bottom: var(--margin1);
+}
+.servicesDescription{
+    padding: 0 1.5rem;
+}
+
+
 /* Media Queries */
 @media screen and (min-width: 960px){
     .bdContainer{
@@ -208,6 +233,7 @@ img{
         --normalFontSize: 1rem;
         --biggestFontSize: 4rem;
         --h1FontSize: 2.25rem;
+        --h3FontSize: 1.25rem;
     }
     body{
         margin: 0;
@@ -235,6 +261,9 @@ img{
     }
     .section{
         padding-top: 8rem;
+    }
+    .servicesContainer{
+        margin-top: var(--margin6);
     }
 }
 @media screen and (min-width: 576px){
