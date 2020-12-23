@@ -15,6 +15,7 @@
     --fontMedium: 500;
     --margin1: .5rem;
     --margin2: 1rem;
+    --margin3: 1.5rem;
     --margin4: 2rem;
     --margin5: 2.5rem;
     --zFixed: 100;
@@ -47,7 +48,7 @@ ul{
     padding: 0;
     list-style: none;
 }
-h1,h2{
+h1,h2,p{
     margin: 0;
 }
 img{
@@ -144,14 +145,47 @@ img{
     background-color: var(--firstColorAlt);
 }
 
+/* About Component */
+.section{
+    padding: 4rem 0 2rem;
+}
+.aboutData{
+    text-align: center;
+}
+.sectionSubtitle{
+    display: block;
+    color: var(--firstColor);
+    font-weight: var(--fontMedium);
+    margin-bottom: var(--margin1);
+}
+.sectionTitle{
+    font-size: var(--h1FontSize);
+    color: var(--titleColor);
+    margin-bottom: var(--margin3);
+}
+.sectionTitle, .sectionSubtitle{
+    text-align: center;
+}
+.aboutDescription{
+    margin-bottom: var(--margin3);
+}
+.aboutImg{
+    width: 280px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
 /* Media Queries */
 @media screen and (min-width: 960px){
     .bdContainer{
-      margin-left: auto;
-      margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .homeImg{
         width: 500px;
+    }
+    .aboutContainer{
+        column-gap: 7rem;
     }
 }
 @media screen and (max-width: 780px){
@@ -199,11 +233,25 @@ img{
         height: 100vh;
         justify-items: center;
     }
+    .section{
+        padding-top: 8rem;
+    }
 }
 @media screen and (min-width: 576px){
     .homeContainer{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
+    }
+    .aboutContainer{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .aboutData,.aboutInitial{
+        text-align: initial;
+    }
+    .aboutImg{
+        width: 380px;
+        order: -1;
     }
 }
 
