@@ -24,6 +24,11 @@
     --h3FontSize: 1rem;
     --smalFontSize: .813rem;
     --fontSemiBold: 600;
+    --textColorLight: #A6A6A6;
+    --h2FontSize: 1.25rem;
+    --smallerFontSize: .75rem;
+    --margin3: 1.5rem;
+    --zTooltip: 10;
 }
 *,::before,::after{
     box-sizing: border-box;
@@ -269,6 +274,46 @@ img{
     margin-bottom: var(--margin3);
 }
 
+/* Footer Component */
+.footerContainer{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+.footerLogo{
+    font-size: var(--h3FontSize);
+    color: var(--firstColor);
+    font-weight: var(--fontSemiBold);
+}
+.footerDescription{
+    display: block;
+    font-size: var(--smalFontSize);
+    margin: .25rem 0 var(--margin3);
+}
+.footerSocial{
+    font-size: 1.5rem;
+    color: var(--titleColor);
+    margin-right: var(--margin2);
+}
+.footerTitle{
+    font-size: var(--h2FontSize);
+    color: var(--titleColor);
+    margin-bottom: var(--margin2);
+}
+.footerLink{
+    display: inline-block;
+    color: var(--textColor);
+    margin-bottom: var(--margin1);
+}
+.footerLink:hover{
+    color: var(--firstColor);
+}
+.footerCopy{
+    text-align: center;
+    font-size: var(--smalFontSize);
+    color: var(--textColorLight);
+    margin-top: 3.5rem;
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 960px){
@@ -308,6 +353,9 @@ img{
         --h1FontSize: 2.25rem;
         --h3FontSize: 1.25rem;
         --smalFontSize: .875rem;
+        --h2FontSize: 1.5rem;
+        --h3FontSize: 1.25rem;
+        --smallerFontSize: .813rem;
     }
     body{
         margin: 0;
