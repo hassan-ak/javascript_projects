@@ -33,7 +33,7 @@
                         <li class="navItem"><a href="#about" class="navLink">About</a></li>
                         <li class="navItem"><a href="#services" class="navLink">Services</a></li>
                         <li class="navItem"><a href="#menu" class="navLink">Menu</a></li>
-                        <li class="navItem"><a href="#ourKitchen" class="navLink">Our Kitchen</a></li>
+                        <li class="navItem"><a href="#ourKitchen" class="navLink">Kitchen</a></li>
                         <li class="navItem"><a href="#contact" class="navLink">Contact us</a></li>
                         <li><i class='bx bx-moon changeTheme' id="theme-button"></i></li>
                     </ul>
@@ -187,16 +187,27 @@
                 </div>
             </section>
 
+            <!-- Kitchen -->
+            <section data-aos="fade-down" data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="200" class="video section bdContainer" id="ourKitchen">
+                <span class="sectionSubtitle">Kitchen</span>
+                <h2 class="sectionTitle">Food Prepration</h2>
+                <div class="videoContainer  bdGrid">
+                    <div class="videoContent">
+                        <video src="./assets/video/kitchen.mp4" autoplay loop id="video"></video>
+                    </div> 
+                </div>
+            </section>
+
             <!-- App Store -->
-            <section class="app section bdContainer">
+            <section class="app section bdContainer" id="app">
                 <div class="appContainer bdGrid" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="2000" data-aos-delay="200">
                     <div class="appData">
                         <span class="sectionSubtitle appInitial">App</span>
                         <h2 class="sectionTitle appInitial">App is aviable</h2>
                         <p class="appDescription">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
                         <div class="appStores">
-                            <a href="#"><img src="assets/img/app1.png" alt="" class="appStore"></a>
-                            <a href="#"><img src="assets/img/app2.png" alt="" class="appStore"></a>
+                            <a href="#app"><img src="assets/img/app1.png" alt="" class="appStore"></a>
+                            <a href="#app"><img src="assets/img/app2.png" alt="" class="appStore"></a>
                         </div>
                     </div>
                     <img src="assets/img/app.png" alt="" class="appImg">
@@ -212,7 +223,7 @@
                         <p class="contactDescription">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
                     </div>
                     <div class="contactButton">
-                        <a href="#" class="button">Contact us now</a>
+                        <a href="#contact" class="button">Contact us now</a>
                     </div>
                 </div>
             </section>
@@ -220,33 +231,33 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer section bdContainer">
+        <footer class="footer section bdContainer" id="footer">
             <div class="footerContainer bdGrid">
                 <div class="footerContent">
                     <a href="#" class="footerLogo">Food Math</a>
                     <span class="footerDescription">Restaurant</span>
                     <div>
-                        <a href="#" class="footerSocial"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footerSocial"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footerSocial"><i class='bx bxl-twitter'></i></a>
+                        <a href="#footer" class="footerSocial"><i class='bx bxl-facebook'></i></a>
+                        <a href="#footer" class="footerSocial"><i class='bx bxl-instagram'></i></a>
+                        <a href="#footer" class="footerSocial"><i class='bx bxl-twitter'></i></a>
                     </div>
                 </div>
                 <div class="footerContent">
                     <h3 class="footerTitle">Services</h3>
                     <ul>
-                        <li><a href="#" class="footerLink">Delivery</a></li>
-                        <li><a href="#" class="footerLink">Pricing</a></li>
-                        <li><a href="#" class="footerLink">Fast food</a></li>
-                        <li><a href="#" class="footerLink">Reserve your spot</a></li>
+                        <li><a href="#footer" class="footerLink">Delivery</a></li>
+                        <li><a href="#menu" class="footerLink">Pricing</a></li>
+                        <li><a href="#footer" class="footerLink">Fast food</a></li>
+                        <li><a href="#footer" class="footerLink">Reserve your spot</a></li>
                     </ul>
                 </div>
                 <div class="footerContent">
                     <h3 class="footerTitle">Information</h3>
                     <ul>
-                        <li><a href="#" class="footerLink">Event</a></li>
-                        <li><a href="#" class="footerLink">Contact us</a></li>
-                        <li><a href="#" class="footerLink">Privacy policy</a></li>
-                        <li><a href="#" class="footerLink">Terms of services</a></li>
+                        <li><a href="#footer" class="footerLink">Event</a></li>
+                        <li><a href="#contact" class="footerLink">Contact us</a></li>
+                        <li><a href="#footer" class="footerLink">Privacy policy</a></li>
+                        <li><a href="#footer" class="footerLink">Terms of services</a></li>
                     </ul>
                 </div>
                 <div class="footerContent">
@@ -271,6 +282,7 @@
         <script src="./js/navScript.js"></script>
         <script src="./js/scrollScript.js"></script>
         <script src="./js/activeScript.js"></script>
+        <script src="./js/videoScript.js"></script>
 
     </body>
 

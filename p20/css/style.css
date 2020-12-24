@@ -63,6 +63,10 @@ img{
     max-width: 100%;
     height: auto;
 }
+video{
+    width: 75%;
+    border-radius: 20px;
+}
 
 /* Header Component Styling */
 .lHeader{
@@ -183,12 +187,12 @@ img{
     justify-self: center;
 }
 
-/* Services Component */
-.servicesContainer{
+/* Services and video Component */
+.servicesContainer, .videoContainer{
     row-gap: 2.5rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
-.servicesContent{
+.servicesContent, .videoContent{
     text-align: center;
 }
 .servicesImg{
@@ -411,7 +415,7 @@ img{
     .section{
         padding-top: 8rem;
     }
-    .servicesContainer{
+    .servicesContainer, .videoContainer{
         margin-top: var(--margin6);
     }
     .menuContainer{
