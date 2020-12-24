@@ -261,6 +261,14 @@ img{
     justify-self: center;
 }
 
+/* Contact Component */
+.contactContainer{
+    text-align: center;
+}
+.contactDescription{
+    margin-bottom: var(--margin3);
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 960px){
@@ -374,6 +382,16 @@ img{
     .appImg{
         width: 380px;
         order: -1;
+    }
+    .contactContainer, .contactInitial{
+        text-align: initial;
+    }
+    .contactContainer{
+        grid-template-columns: 1.75fr 1fr;
+        align-items: center;
+    }
+    .contactButton{
+        justify-self: center;
     }
 }
 
