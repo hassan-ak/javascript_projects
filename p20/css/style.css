@@ -314,6 +314,33 @@ img{
     margin-top: 3.5rem;
 }
 
+/* Scroller */
+.scrollTop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(6,156,84,.5);
+    border-radius: .4rem;
+    z-index: var(--zTooltip);
+    transition: .4s;
+    visibility: visible;
+}
+.scrollTop:hover{
+    background-color: var(--firstColorAlt);
+}
+.scrollTopIcon{
+    font-size: 1.8rem;
+    color: var(--bodyColor);
+}
+.showScroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 960px){
