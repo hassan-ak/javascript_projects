@@ -242,6 +242,25 @@ img{
     border-radius: .5rem 0 .5rem 0;
 }
 
+/* App Store */
+.appData{
+    text-align: center;
+}
+.appDescription{
+    margin-bottom: var(--margin5);
+}
+.appStores{
+    margin-bottom: var(--margin4);
+}
+.appStore{
+    width: 120px;
+    margin: 0 var(--margin1);
+}
+.appImg{
+    width: 230px;
+    justify-self: center;
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 960px){
@@ -253,6 +272,9 @@ img{
         width: 500px;
     }
     .aboutContainer{
+        column-gap: 7rem;
+    }
+    .appContainer{
         column-gap: 7rem;
     }
 }
@@ -322,6 +344,9 @@ img{
     .menuImg{
         width: 130px;
     }
+    .appStore{
+        margin: 0 var(--margin1) 0 0;
+      }
 }
 @media screen and (min-width: 576px){
     .homeContainer{
@@ -336,6 +361,17 @@ img{
         text-align: initial;
     }
     .aboutImg{
+        width: 380px;
+        order: -1;
+    }
+    .appContainer{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .appData, .appInitial{
+        text-align: initial;
+    }
+    .appImg{
         width: 380px;
         order: -1;
     }
